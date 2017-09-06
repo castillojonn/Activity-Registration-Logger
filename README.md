@@ -1,0 +1,1 @@
+# Activity Availability and Registration Logger
