@@ -9,7 +9,7 @@ Events.schema = new SimpleSchema({
         type: String,
         regEx: SimpleSchema.RegEx.Id,
         denyUpdate: true,
-    }
+    },
     title: {
         type: String,
         max: 100,
@@ -19,7 +19,7 @@ Events.attachSchema(Events.schema);
 
 // expose public fields
 // we can hide fields here that we want to keep secret to server
-Todos.publicFields = {
+Events.publicFields = {
   eventId: 1,
   title: 1,
 };

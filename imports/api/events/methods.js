@@ -1,4 +1,4 @@
-import { Meteor } from 'meteor';
+import { Meteor } from 'meteor/meteor';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
 
 import { Events } from './events';
@@ -18,4 +18,4 @@ export const insertEvent = new ValidatedMethod({
 
         Events.insert(ev);
     }
-})
+});
