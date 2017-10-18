@@ -1,7 +1,7 @@
 # Activity Availability and Registration Logger
 
+_For example file structure, see [meteor todo list example](https://github.com/meteor/todos/tree/react)_
 ### File Structure
-
 ```sh
 imports/
   startup/
