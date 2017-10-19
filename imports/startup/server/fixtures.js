@@ -26,13 +26,29 @@ import { insertEvent } from '../../api/events/methods';
 
 // insert mock data to db
 if (!Meteor.isProduction) {
-    insertEvent.call({
-        title: "Mock Event",
-        startDateTime: new Date(),
-        endDateTime: new Date(),
-    }, (error) => {
-        if (error) {
-            console.log(error.reason);
+    const mockEvents = [
+        {
+            title: "Apple Picking",
+            startDateTime: new Date(),
+            endDateTime: new Date(),
+        },
+        {
+            title: "Doctor Stuff",
+            startDateTime: new Date(),
+            endDateTime: new Date(),
+        },
+        {
+            title: "Chunin Exams",
+            startDateTime: new Date(),
+            endDateTime: new Date(),
         }
-    });
+    ];
+
+    mockEvents.forEach(function(ev) {
+        insertEvent.call(ev, (error) => {
+            if (error) {
+                console.log(error.reason);
+            }
+        });
+    })
 }
