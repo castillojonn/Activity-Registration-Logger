@@ -3,6 +3,13 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 export const Events = new Mongo.Collection('events');
 
+// deny client-side updates, all updates handled through methods
+Events.deny({
+  insert() { return true; },
+  update() { return true; },
+  remove() { return true; },
+});
+
 // define schema
 Events.schema = new SimpleSchema({
     title: {
