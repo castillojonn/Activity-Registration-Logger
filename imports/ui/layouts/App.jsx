@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Navigation } from '../components/Navigation';
-import { Events } from '../../api/events/events';
 import EventItem from '../components/EventItem';
 
 export default class App extends React.Component {

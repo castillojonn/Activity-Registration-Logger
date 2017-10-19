@@ -5,16 +5,15 @@ import { Events } from './events';
 
 export const insertEvent = new ValidatedMethod({
     name: 'events.insert',
+    
     validate: new SimpleSchema({
         title: { type: String },
     }).validator(),
-    run({ title }) {
 
+    run({ title }) {
         const ev = {
             title: title
         };
-
         Events.insert(ev);
-        console.log(Events.find({}).fetch());
     }
 });
