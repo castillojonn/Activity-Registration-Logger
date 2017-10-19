@@ -10,6 +10,8 @@ export default class EventItem extends Component {
         return (
             <li>
                 <h3>{ this.props.event.title }</h3>
+                <p><strong>Start:</strong> { this.props.event.startDateTime.toString() }</p>
+                <p><strong>End:</strong> { this.props.event.endDateTime.toString() }</p>
             </li>
         );
     }

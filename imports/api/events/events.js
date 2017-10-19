@@ -9,11 +9,19 @@ Events.schema = new SimpleSchema({
         type: String,
         max: 100,
     },
+    startDateTime: {
+        type: Date,
+    },
+    endDateTime: {
+        type: Date,
+    },
 });
 Events.attachSchema(Events.schema);
 
 // expose public fields
 // we can hide fields here that we want to keep secret to server
 Events.publicFields = {
-  title: 1,
+    title: 1,
+    startDateTime: 1,
+    endDateTime: 1,
 };
