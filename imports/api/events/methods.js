@@ -7,15 +7,14 @@ export const insertEvent = new ValidatedMethod({
     name: 'events.insert',
     validate: new SimpleSchema({
         title: { type: String },
-        eventId: { type: String }
     }).validator(),
-    run({ title, eventId }) {
+    run({ title }) {
 
         const ev = {
-            eventId: eventId,
             title: title
         };
 
         Events.insert(ev);
+        console.log(Events.find({}).fetch());
     }
 });

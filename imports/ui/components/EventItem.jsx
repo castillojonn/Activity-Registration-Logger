@@ -1,4 +1,4 @@
-import { React, Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 // import methods from api
@@ -21,5 +21,5 @@ export default class EventItem extends Component {
 }
 
 EventItem.propTypes = {
-    event: PropTypes.object.isRequired,
+    event: PropTypes.object,
 }

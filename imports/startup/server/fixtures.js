@@ -28,10 +28,9 @@ import { insertEvent } from '../../api/events/methods';
 if (!Meteor.isProduction) {
     insertEvent.call({
         title: "Mock Event",
-        //eventId: 0
     }, (error) => {
         if (error) {
-            alert(error.reason);
+            console.log(error.reason);
         }
-    })
+    });
 }

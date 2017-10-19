@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Navigation } from '../components/Navigation';
 import { Events } from '../../api/events/events';
-import { EventItem } from '../components/EventItem';
+import EventItem from '../components/EventItem';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -11,15 +11,17 @@ export default class App extends React.Component {
     }
 
     renderEvents() {
-        // return this.props.events.map((ev) => {
-        //     return (
-        //         <EventItem
-        //             event={ev}
-        //             />
-        //     );
-        // });
+        if (!this.props.loading) {
+            return this.props.events.map((ev) => {
+                return (
+                    <EventItem
+                        event={ev}
+                        />
+                );
+            });
+        }
         return (
-            <li>first</li>
+            <li>Loading...</li>
         );
     }
 
@@ -35,5 +37,6 @@ export default class App extends React.Component {
 }
 
 App.propTypes = {
-    events: PropTypes.array.isRequired,
+    loading: PropTypes.bool,
+    events: PropTypes.array,
 }
