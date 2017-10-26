@@ -1,9 +1,8 @@
 import React from 'react';
 
 export const Index = () => 
-
-
-<h3>Stewart's Merge Conflict</h3>
-<div>
-	<p>Here we introduce some conflict</p>
-</div;
+    
+    <div>
+    <h3>Activity Registration Logger</h3>
+    <p>An app that tracks CME credit hours for approved CME course, seminar, and events.</p>
+    </div>;
