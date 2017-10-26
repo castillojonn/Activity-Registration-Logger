@@ -12,4 +12,5 @@ export const renderRoutes = () => (
             <Route path="newsfeed" component={ NewsfeedPageContainer } />
         </Route>
     </Router>
+    
 );

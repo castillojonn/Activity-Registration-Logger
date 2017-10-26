@@ -9,7 +9,7 @@ export const Navigation = () => (
             added like normal.
     */
     <div>   
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
             <a class="navbar-brand" href="/">Activity Registration Logger</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,6 +17,7 @@ export const Navigation = () => (
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="/newsfeed">Newsfeed<span class="sr-only">(current)</span></a>
+                    <p></p>
                     <a class="nav-item nav-link" href="#">Calendar</a>
                 </div>
             </div>

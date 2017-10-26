@@ -11,7 +11,9 @@ export default class NewsfeedPage extends Component {
     renderEvents() {
         if (this.props.loading) {
             return (
-                <span>Loading...</span>
+                <div class="container">
+                    <span>Loading...</span>
+                </div>
             );
         }
 
