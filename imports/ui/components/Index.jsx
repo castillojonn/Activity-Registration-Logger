@@ -4,7 +4,7 @@ export const Index = () =>
     
     <div class="container">
     <h3>Activity Registration Logger</h3>
-
+    <p>Stewart Testing to see if his github account links with this commit</p>
     <p>An app that tracks CME credit hours for approved CME course, seminar, and events</p>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
