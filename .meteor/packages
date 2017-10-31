@@ -23,3 +23,5 @@ aldeed:collection2
 reywood:publish-composite
 react-meteor-data
 twbs:bootstrap
+accounts-google
+accounts-ui
