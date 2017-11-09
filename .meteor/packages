@@ -25,3 +25,6 @@ react-meteor-data
 twbs:bootstrap
 accounts-google
 accounts-ui
+http
+underscore
+google-config-ui

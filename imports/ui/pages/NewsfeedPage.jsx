@@ -21,9 +21,7 @@ export default class NewsfeedPage extends Component {
             <ul>
                 { this.props.events.map((ev) => {
                     return (
-                        <EventItem
-                            event={ev}
-                            />
+                        <EventItem event={ev} />
                     );
                 }) }
             </ul>
