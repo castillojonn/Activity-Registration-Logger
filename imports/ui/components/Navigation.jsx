@@ -18,6 +18,8 @@ import BS from 'bootstrap';
 
 ReactDOM.render(navbarInstance, mountNode);*/
 
+import { Button, Navbar, Glyphicon } from 'react-bootstrap';
+
 export const Navigation = () => (
     /* Container to prevent an error.
 
@@ -25,22 +27,22 @@ export const Navigation = () => (
             Using Bootstraps built in Navbar. Functionality can be
             added like normal.
     */
-    <div>   
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-            <a class="navbar-brand" href="/">Activity Registration Logger</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="/newsfeed">Newsfeed<span class="sr-only">(current)</span></a>
+    <div>
+        <Navbar className="navbar navbar-expand-lg navbar-light bg-light" >
+            <a className="navbar-brand" href="/">Activity Registration Logger</a>
+            <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <Glyphicon glyph="menu-up"></Glyphicon>
+            </Button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav">
+                    <a className="nav-item nav-link" href="/newsfeed">Newsfeed<span className="sr-only">(current)</span></a>
                     <p></p>
-                    <a class="nav-item nav-link" href="#">Calendar</a>
+                    <a className="nav-item nav-link" href="#">Calendar</a>
                 </div>
             </div>
-        </nav>
+        </Navbar>
     </div>
-    
+
     /**<ul>
         <li><IndexLink to="/" activeClassName="active">Index</IndexLink></li>
         <li><Link to="/newsfeed">Newsfeed</Link></li>**/

@@ -11,7 +11,7 @@ export default class NewsfeedPage extends Component {
     renderEvents() {
         if (this.props.loading) {
             return (
-                <div class="container">
+                <div className="container">
                     <span>Loading...</span>
                 </div>
             );
@@ -21,9 +21,7 @@ export default class NewsfeedPage extends Component {
             <ul>
                 { this.props.events.map((ev) => {
                     return (
-                        <EventItem
-                            event={ev}
-                            />
+                        <EventItem event={ev} />
                     );
                 }) }
             </ul>

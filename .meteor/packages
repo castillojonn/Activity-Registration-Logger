@@ -23,4 +23,8 @@ aldeed:collection2
 reywood:publish-composite
 react-meteor-data
 twbs:bootstrap
-universe:react-bootstrap
+accounts-google
+accounts-ui
+http
+underscore
+google-config-ui
