@@ -8,6 +8,6 @@ export default withTracker(() => {
     const eventsHandle = Meteor.subscribe('events');
     return {
         loading: !eventsHandle.ready(),
-        events: Events.find({}).fetch(),
+        events: Events.find({}).fetch()
     };
 })(NewsfeedPage);
