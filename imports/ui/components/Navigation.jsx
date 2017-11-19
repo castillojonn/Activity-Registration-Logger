@@ -40,7 +40,7 @@ export const Navigation = () => (
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="/newsfeed">Newsfeed<span className="sr-only">(current)</span></a>
                     <p></p>
-                    <a class="nav-item nav-link" href="#">Calendar</a>
+                    <a class="nav-item nav-link" href="/calendar">Calendar</a>
                 </div>
             </div>
         </nav>
