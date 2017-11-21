@@ -17,10 +17,20 @@ body {
 
   line-height: 1;
 
+  
+}
+
+.mainBody {
+  margin-left: 4%;
+  margin-right: 4%;
+  /* Border to set boundaries */
+  border: 1px solid black;
 }
 
 nav{
   color: #000000;
-  text-align: center;
-  background-color: #73000a;
+  background-color: #bb4751;
+}
+nav a {
+  color: #000000;
 }
