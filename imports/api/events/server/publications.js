@@ -2,6 +2,8 @@ import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { HTTP } from 'meteor/http';
 
+import { CALENDAR_ID } from '../../../startup/server/globals';
+
 Meteor.publish('events', function () {
     var self = this;
     var publishedKeys = {};
@@ -25,7 +27,7 @@ Meteor.publish('events', function () {
             }
         };
 
-        var url = 'https://www.googleapis.com/calendar/v3/calendars/capstone.reg.log@gmail.com/events';
+        var url = 'https://www.googleapis.com/calendar/v3/calendars/'+ CALENDAR_ID +'/events';
         var response = HTTP.get(url, options);
 
         _.each(response.data.items, function(item) {
