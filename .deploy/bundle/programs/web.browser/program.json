@@ -2,31 +2,31 @@
   "format": "web-program-pre1",
   "manifest": [
     {
-      "path": "07252e6b926148cba3ba85875855af8ba4438da2.js",
+      "path": "fbf5ea4809d3cd5d89d635b65f06a85d96ab5017.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/07252e6b926148cba3ba85875855af8ba4438da2.js?meteor_js_resource=true",
-      "size": 1093141,
-      "hash": "07252e6b926148cba3ba85875855af8ba4438da2"
+      "url": "/fbf5ea4809d3cd5d89d635b65f06a85d96ab5017.js?meteor_js_resource=true",
+      "size": 1093161,
+      "hash": "fbf5ea4809d3cd5d89d635b65f06a85d96ab5017"
     },
     {
-      "path": "07252e6b926148cba3ba85875855af8ba4438da2.stats.json",
+      "path": "fbf5ea4809d3cd5d89d635b65f06a85d96ab5017.stats.json",
       "where": "client",
       "type": "json",
       "cacheable": true,
-      "url": "/07252e6b926148cba3ba85875855af8ba4438da2.stats.json?meteor_js_resource=true",
-      "size": 35136,
-      "hash": "0feaf955af9286a83634f9ef7fa6e1057313d3ce"
+      "url": "/fbf5ea4809d3cd5d89d635b65f06a85d96ab5017.stats.json?meteor_js_resource=true",
+      "size": 35178,
+      "hash": "0df4cc446b5436f6cdcf628222c83bcdf336ff04"
     },
     {
-      "path": "a79aa8e6f0ba3e76b7c8bf678a3bbdc903dd11a2.css",
+      "path": "379802f08217065dd8034c011b171086db5a12b6.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/a79aa8e6f0ba3e76b7c8bf678a3bbdc903dd11a2.css?meteor_css_resource=true",
-      "size": 130505,
-      "hash": "a79aa8e6f0ba3e76b7c8bf678a3bbdc903dd11a2"
+      "url": "/379802f08217065dd8034c011b171086db5a12b6.css?meteor_css_resource=true",
+      "size": 130799,
+      "hash": "379802f08217065dd8034c011b171086db5a12b6"
     },
     {
       "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
