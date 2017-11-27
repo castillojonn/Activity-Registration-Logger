@@ -8,5 +8,7 @@ Meteor.publish('user.attendance', function () {
 
     return Attendance.find({
         userId: this.userId,
+    }, {
+        fields: Attendance.publicFields,
     });
 });

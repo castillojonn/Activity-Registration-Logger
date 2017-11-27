@@ -36,7 +36,7 @@ export const getSingleEvent = new ValidatedMethod({
             if (response.data.error) {
                 throw new Exception('Error calling for event, event does not exist');
             } else {
-                return respone.data;
+                return response.data;
             }
 
         } catch (error) {
