@@ -1,37 +1,19 @@
 # Activity Availability and Registration Logger
 
-_For example file structure, see [meteor todo list example](https://github.com/meteor/todos/tree/react)_
-### File Structure
-```sh
-imports/
-  startup/
-    client/
-      index.js                 # import client startup through a single index entry point
-      routes.js                # set up all routes in the app
-      useraccounts-configuration.js # configure login templates
-    server/
-      fixtures.js              # fill the DB with example data on startup
-      index.js                 # import server startup through a single index entry point
+_For example file structure, see [meteor todo list example (react branch)](https://github.com/meteor/todos/tree/react)_
 
-  api/
-    events/                    # a unit of domain logic
-      server/
-        publications.js        # all event-related publications
-        publications.tests.js  # tests for the event publications
-      events.js                # definition of the Events collection
-      events.tests.js          # tests for the behavior of that collection
-      methods.js               # methods related to events
-      methods.tests.js         # tests for those methods
+### Testing
+To set up your local machine for development after cloning the repo, follow the steps below:
 
-  ui/
-    components/                # all reusable components in the application
-                               # can be split by domain if there are many
-    layouts/                   # wrapper components for behaviour and visuals
-    pages/                     # entry points for rendering used by the router
-
-client/
-  main.js                      # client entry point, imports all client code
-
-server/
-  main.js                      # server entry point, imports all server code
+1. [Install MeteorJS](https://www.meteor.com/install)
+2. Install npm packages
+```bash
+$ cd availability-registration-logger
+$ meteor npm install
 ```
+3. Run meteor
+```bash
+$ meteor
+```
+
+You should see a message giving you the port at which the app is running on localhost, usually it is `localhost:3000`

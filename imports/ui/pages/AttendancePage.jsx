@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import AttendanceItem from '../components/AttendanceItem';
+
 export default class AttendancePage extends Component {
     constructor(props) {
         super(props);
@@ -17,9 +19,9 @@ export default class AttendancePage extends Component {
 
         return (
             <ul>
-                { this.props.attendance.map((at) => {
+                { this.props.attendanceEvents.map((ev) => {
                     return (
-                        <h3>{ at.eventId }</h3>
+                        <AttendanceItem event={ev} />
                     );
                 }) }
             </ul>
@@ -38,5 +40,5 @@ export default class AttendancePage extends Component {
 
 AttendancePage.propTypes = {
     loading: PropTypes.bool,
-    attendance: PropTypes.array,
+    attendanceEvents: PropTypes.array,
 };
