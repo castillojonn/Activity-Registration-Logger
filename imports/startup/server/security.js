@@ -3,6 +3,7 @@ import { Meteor } from 'meteor/meteor';
 // deny all updates to users' profiles
 Meteor.users.deny({ update: () => true });
 
+// automatically configure google login
 ServiceConfiguration.configurations.remove({
   service: "google"
 });
