@@ -7,6 +7,15 @@ export default class EventItem extends Component {
         super(props);
     }
 
+
+    exportThisEvent() {
+        const ev =  {
+            eventId: this.props.event._id
+        };
+
+        Meteor.call('Attendance.methods.exportToGoogleSheet', ev);
+    }
+
     attendThisEvent() {
         const ev =  {
             eventId: this.props.event._id
@@ -20,9 +29,10 @@ export default class EventItem extends Component {
             <li>
                 <h3>{ this.props.event.summary }</h3>
 		<form>
-		  <textarea id="pin" rows="1" cols="5" maxlength="4" placeholder="XXXX" />
+		  <textarea id="pin" rows="1" cols="5" maxLength="4" placeholder="XXXX" />
                   <h1> </h1>
 		  <input type="submit" id="id" name="name" value="Submit" onClick={this.attendThisEvent.bind(this)} />
+          <input type="submit" id="exportId" name="exportName" value="Export" onClick={this.exportThisEvent.bind(this)} />
 		</form>
             </li>
 
