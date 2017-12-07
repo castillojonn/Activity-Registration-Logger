@@ -7,21 +7,10 @@ export default class AttendanceItem extends Component {
         super(props);
     }
 
-    deleteAttendance() {
-        const ev = {
-            eventId: this.props.event._id
-        };
-
-        Meteor.call('Attendance.methods.delete', ev);
-    }
-
     render() {
         return (
             <li>
                 <h3>{ this.props.event.summary }</h3>
-                <button onClick={this.deleteAttendance.bind(this)}>
-                    x
-                </button>
             </li>
         );
     }

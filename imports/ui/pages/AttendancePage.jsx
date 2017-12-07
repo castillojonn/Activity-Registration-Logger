@@ -19,10 +19,10 @@ export default class AttendancePage extends Component {
 
         return (
             <ul>
-                { this.props.attendanceEvents.map((ev) => {
+                { this.props.attendanceEvents.map((at) => {
                     return (
-                        <AttendanceItem event={ev} />
-                    );
+                        <AttendanceItem event={at} />
+                    )
                 }) }
             </ul>
         );

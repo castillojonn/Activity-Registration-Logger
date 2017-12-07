@@ -28,10 +28,10 @@ export const insertAttendance = new ValidatedMethod({
             };
 
             Attendance.insert(at);
-            console.log("Attendance inserted: " + at);
+            console.log("Attendance inserted: " + at.eventId);
         }
         else {
-            console.log("Attendance not inserted: " + at);
+            console.log("Attendance not inserted: " + at.eventId);
         }
     },
 });
