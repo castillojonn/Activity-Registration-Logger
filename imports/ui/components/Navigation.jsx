@@ -14,7 +14,7 @@ export const Navigation = () => (
         <Navbar.Collapse>
             <Nav pullRight>
                 <NavItem eventKey={1} href="/newsfeed">Newsfeed</NavItem> 
-                <NavItem eventKey={2} href="/calendar">Calendar</NavItem> 
+                <NavItem eventKey={2} href="/calendar">Calendar</NavItem>
                 <NavItem eventKey={3} href="/attendance">Attendance</NavItem>
             </Nav>
         </Navbar.Collapse>
